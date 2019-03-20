@@ -7,9 +7,18 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
-## About Laravel
+## Информация об установке
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Для установки проекта необходимо:
+Перейти cd domains 
+1. git clone https://github.com/elena7759/saytlaravel.git
+2. cd saitlaravel
+3. composer install
+4. создать файл .env по примеру example.env
+5. создать базу данных с именем basa
+6. в файле .env подключиться к базе
+7. php artisan migrate
+8. сайт доступен
 
 - [Simple, fast routing engine](https://laravel.com/docs/routing).
 - [Powerful dependency injection container](https://laravel.com/docs/container).
