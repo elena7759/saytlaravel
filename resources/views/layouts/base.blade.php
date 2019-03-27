@@ -49,8 +49,8 @@
         	<!-- **container - Starts** -->
             <div class="container">
                 <ul class="top-contact-details alignleft">
-                    <li> <i class="fa fa-unlock-alt"></i><a href="#" title="login">Войти</a></li>
-                    <li> <i class="fa fa-key"></i><a href="#" title="register">Регистрация</a></li>
+                    <li> <i class="fa fa-unlock-alt"></i><a href="{{asset('login')}}" title="login">Войти</a></li>
+                    <li> <i class="fa fa-key"></i><a href="{{asset('register')}}" title="register">Регистрация</a></li>
                     <li> <i class="fa fa-envelope"></i><a href="#" title="newsletter">mail@mail.ru</a></li>
 					<li> <a href="https://www.youtube.com/" title="youtube"> <i class="fa fa-youtube"></i>  </a> </li>
 					<li> <a href="https://vk.com/" title="vk"> <i class="fa fa-vk"></i>  </a> </li>
