@@ -27,12 +27,17 @@ class HomeController extends Controller
      */
     public function index()
 
-    {
-        return view('home');
+    {$products=Product::where('user_id', Auth::user()->id)->paginate(10);
+        return view('home', compact('products'));
     }
 	public function postIndex(ProductRequest $r){
 		$r['user_id']=Auth::user()->id;
-		$r['picture']='';
+		if($_FILES['picture1']){
+			$pic=\App::make('\App\Libs\Imag')->url($_FILES['picture1']['tmp_name']);
+		}else{
+			$pic='';
+		}
+		$r['picture']=$pic;
 		Product::create($r->all());
 		return redirect()->back();
     }
