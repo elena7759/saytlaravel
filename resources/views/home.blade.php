@@ -71,7 +71,7 @@
 <td>{{$one->name}}</td>
 <td>{{$one->price}}</td>
 <td>{{$one->status}}</td>
-<td><a href="#">&times;</a></td>
+<td><a href="{{asset('home/dell/'.$one->id)}}">&times;</a></td>
 </tr>
 @endforeach
 </table>

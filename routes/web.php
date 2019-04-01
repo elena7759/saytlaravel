@@ -20,5 +20,24 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::post('home', 'HomeController@postindex');
 
 Route::get('populars','StaticController@getPopulars');
+
+Route::get('products', 'ProductController@getindex');
+
+Route::get('product/{id}','ProductController@getOne');
+
+Route::get('home/dell/{id}', 'HomeController@getDelete');
+
+
+
+
+
+
+
+
+
+
+
+
+
 //defoult
 Route::get('{url}', 'StaticController@getIndex');
