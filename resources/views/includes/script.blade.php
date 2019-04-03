@@ -1,5 +1,7 @@
     <script src="{{asset('js/jquery-1.10.2.min.js')}}" type="text/javascript"></script>
-    <script src="{{asset('js/jquery-migrate.min.js')}}"></script>
+	@section('scripts')
+	@show
+	<script src="{{asset('js/jquery-migrate.min.js')}}"></script>
     <script src="{{asset('js/pace.min.js')}}" type="text/javascript"></script>
     <script src="{{asset('js/jquery.tabs.min.js')}}"></script>
     <script src="{{asset('js/jquery.tipTip.minified.js')}}"></script>
@@ -29,5 +31,3 @@
 	<script src="{{asset('js/retina.js')}}" type="text/javascript"></script>
 	<script src="{{asset('js/jquery.nicescroll.min.js')}}" type="text/javascript"></script>
 	<script src="{{asset('js/custom.js')}}" type="text/javascript"></script>
-@section('scripts')
-@show    

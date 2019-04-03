@@ -33,7 +33,8 @@
     
     <!-- **Font Awesome** -->
 	<link rel="stylesheet" href="{{asset('css/font-awesome.min.css')}}" type="text/css" />
-    
+    @section('styles')
+		@show
    
 </head>
 
