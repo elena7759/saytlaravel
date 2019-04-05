@@ -13,9 +13,9 @@
                     <span class="dt-menu-toggle-icon"></span>
                 </div>
                 <ul class="menu">
-                    <li class="menu-item-simple-parent current_page_item"><a href="index.html">Главная</a></li>
+                    <li class="menu-item-simple-parent current_page_item"><a href="index.html">{{__('menu.main')}}</a></li>
                     <li class="menu-item-megamenu-parent megamenu-4-columns-group menu-item-depth-0"><a
-                                href="{{asset('photo')}}">Фото</a></li>
+                                href="{{asset('photo')}}">{{__('menu.photo')}}</a></li>
                     <li class="menu-item-simple-parent"><a href="{{asset('video')}}">Видео</a>
                         <ul class="sub-menu">
                             <li class="menu-item-simple-parent current_page_item menu-item-depth-0"><a
