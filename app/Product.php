@@ -15,4 +15,10 @@ class Product extends Model
 	'vip',
 	'user_id'
 	];
+
+
+public function catalogs(){
+    return $this->belongsTo('\App\Catalog', 'catalog_id');
+    }
 }
+

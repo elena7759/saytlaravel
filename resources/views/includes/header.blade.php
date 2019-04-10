@@ -15,15 +15,15 @@
                 <ul class="menu">
                     <li class="menu-item-simple-parent current_page_item"><a href="index.html">{{__('menu.main')}}</a></li>
                     <li class="menu-item-megamenu-parent megamenu-4-columns-group menu-item-depth-0"><a
-                                href="{{asset('photo')}}">{{__('menu.photo')}}</a></li>
+                                href="{{asset('photo')}}">Фото</a></li>
                     <li class="menu-item-simple-parent"><a href="{{asset('video')}}">Видео</a>
                         <ul class="sub-menu">
                             <li class="menu-item-simple-parent current_page_item menu-item-depth-0"><a
-                                        href="headers.html">Headers</a></li>
-                            <li class="menu-item-simple-parent menu-item-depth-0"><a href="footer1.html">Footers</a>
+                                        href="headers.html">{{__('menu.video.headers')}}</a></li>
+                            <li class="menu-item-simple-parent menu-item-depth-0"><a href="footer1.html">{{__('menu.video.footers')}}</a>
                             </li>
-                            <li class="menu-item-simple-parent menu-item-depth-0"><a href="about.html">About</a></li>
-                            <li><a href="team.html"> Team </a></li>
+                            <li class="menu-item-simple-parent menu-item-depth-0"><a href="about.html">{{__('menu.video.about')}}</a></li>
+                            <li><a href="team.html"> {{__('menu.video.team')}} </a></li>
                             <li><a href="services.html"> Services </a></li>
                             <li><a href="pricing-table.html"> Pricing </a></li>
                             <li><a href="tabs-accordions.html"> Shortcodes </a></li>
@@ -36,9 +36,9 @@
                         <a class="dt-menu-expand">+</a>
                     </li>
                     <li class="menu-item-megamenu-parent megamenu-4-columns-group menu-item-depth-0"><a
-                                href="{{asset('populars')}}">Блог</a></li>
+                                href="{{asset('populars')}}">{{__('menu.blog')}}</a></li>
                     <li class="menu-item-megamenu-parent megamenu-5-columns-group menu-item-depth-0"><a
-                                href="{{asset('products')}}">Галерея</a>
+                                href="{{asset('products')}}">{{__('menu.photo')}}</a>
                         <div class="megamenu-child-container">
                             <ul class="sub-menu">
                                 <li><a href="portfolio-1-column-without-space.html"> I Column</a></li>
@@ -50,6 +50,8 @@
                     </li>
                     <li class="menu-item-simple-parent"><a href="shop.html">Витрина</a></li>
                     <li class="menu-item-simple-parent"><a href="{{asset('contact')}}">Контакты</a></li>
+                    <li class="menu-item-simple-parent"><a href="{{asset('/?lang=ru')}}">RU</a></li>
+                    <li class="menu-item-simple-parent"><a href="{{asset('/?lang=en')}}">EN</a></li>
                 </ul>
             </nav>
             <!-- **Nav - End**-->
