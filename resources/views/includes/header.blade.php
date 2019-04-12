@@ -9,29 +9,19 @@
             <!-- **Nav - Starts**-->
             <nav id="main-menu">
                 <div id="dt-menu-toggle" class="dt-menu-toggle">
-                    Menu
+                   {{__('menu.menu')}}
                     <span class="dt-menu-toggle-icon"></span>
                 </div>
                 <ul class="menu">
-                    <li class="menu-item-simple-parent current_page_item"><a href="index.html">{{__('menu.main')}}</a></li>
+                    <li class="menu-item-simple-parent current_page_item"><a href="{{asset('/')}}">{{__('menu.main')}}</a>
+                    </li>
                     <li class="menu-item-megamenu-parent megamenu-4-columns-group menu-item-depth-0"><a
-                                href="{{asset('photo')}}">Фото</a></li>
-                    <li class="menu-item-simple-parent"><a href="{{asset('video')}}">Видео</a>
+                                href="{{asset('photo')}}">{{__('menu.photo')}}</a></li>
+                    <li class="menu-item-simple-parent"><a href="{{asset('video')}}">{{__('menu.video_menu')}}</a>
                         <ul class="sub-menu">
-                            <li class="menu-item-simple-parent current_page_item menu-item-depth-0"><a
-                                        href="headers.html">{{__('menu.video.headers')}}</a></li>
-                            <li class="menu-item-simple-parent menu-item-depth-0"><a href="footer1.html">{{__('menu.video.footers')}}</a>
-                            </li>
-                            <li class="menu-item-simple-parent menu-item-depth-0"><a href="about.html">{{__('menu.video.about')}}</a></li>
-                            <li><a href="team.html"> {{__('menu.video.team')}} </a></li>
-                            <li><a href="services.html"> Services </a></li>
-                            <li><a href="pricing-table.html"> Pricing </a></li>
-                            <li><a href="tabs-accordions.html"> Shortcodes </a></li>
-                            <li><a href="miscellaneous.html"> Miscellaneous </a></li>
-                            <li><a href="coming-soon.html"> Coming Soon </a></li>
-                            <li><a href="login.html"> Login </a></li>
-                            <li><a href="register.html"> Register </a></li>
-                            <li><a href="404-page.html"> 404 - page </a></li>
+                            @foreach($videos as $one)
+                                <li><a href="'{{asset('/catalog/'.$one->id)}}">{{__('menu.video.'.$one->name)}}</a></li>
+                            @endforeach
                         </ul>
                         <a class="dt-menu-expand">+</a>
                     </li>
@@ -48,8 +38,8 @@
                         </div>
                         <a class="dt-menu-expand">+</a>
                     </li>
-                    <li class="menu-item-simple-parent"><a href="shop.html">Витрина</a></li>
-                    <li class="menu-item-simple-parent"><a href="{{asset('contact')}}">Контакты</a></li>
+                    <li class="menu-item-simple-parent"><a href="{{asset('shop')}}">{{__('menu.shop')}}</a></li>
+                    <li class="menu-item-simple-parent"><a href="{{asset('contact')}}">{{__('menu.contact')}}</a></li>
                     <li class="menu-item-simple-parent"><a href="{{asset('/?lang=ru')}}">RU</a></li>
                     <li class="menu-item-simple-parent"><a href="{{asset('/?lang=en')}}">EN</a></li>
                 </ul>
