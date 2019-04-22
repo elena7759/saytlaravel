@@ -10,6 +10,9 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});
 
 Route::group(['middleware' => ['lang']], function () {
     Route::get('/', 'BaseController@getIndex');
@@ -41,7 +44,16 @@ Route::get('catalogs', 'CatalogController@getAll');
 
 Route::get('catalog/{id}', 'CatalogController@getone');
 
+Route::resources([
+    'user'=>'UserController',
+    'user2'=>'User2Controller'
+]);
 
+
+
+//test
+Route::get('test/index','TestController@getIndex');
+Route::get('test/{id}','TestController@getShow');
 
 
 
@@ -49,3 +61,6 @@ Route::get('catalog/{id}', 'CatalogController@getone');
 
 //defoult
 Route::get('{url}', 'StaticController@getIndex');
+
+
+
