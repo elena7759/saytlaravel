@@ -78,14 +78,7 @@
             <div class="copyright">
             	<div class="container">
                 	<p>Priority theme by iamdesigning. © 2015 <a href="#">BuddhaThemes</a></p>
-                    <ul class="footer-links">
-                    	<li><a href="index.html">Home</a>/</li>
-                        <li><a href="about.html">About</a>/</li>
-                        <li><a href="tabs-accordions.html">Pages</a>/</li>
-                        <li><a href="blog.html">Blog</a>/</li>
-                        <li><a href="portfolio-3-column-without-space.html">Portfolio</a>/</li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
+                    
                 </div>
             </div>
             

@@ -2,7 +2,7 @@
     <div class="container">
         <!-- **Logo - End** -->
         <div id="logo">
-            <a href="index.html" title="Priority"> <img src="{{asset('images/logo.png')}}" alt="image"/> </a>
+            <a href="index.html" title="Priority"> <img src="{{voyager::image(setting('site.logo'))}}" alt="image"/> </a>
         </div><!-- **Logo - End** -->
 
         <div id="menu-container">
@@ -43,6 +43,7 @@
                     <li class="menu-item-simple-parent"><a href="{{asset('/?lang=ru')}}">RU</a></li>
                     <li class="menu-item-simple-parent"><a href="{{asset('/?lang=en')}}">EN</a></li>
                 </ul>
+				{!!menu('main','menu')!!}
             </nav>
             <!-- **Nav - End**-->
         </div>

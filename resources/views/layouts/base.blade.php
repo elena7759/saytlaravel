@@ -8,7 +8,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
-	<title>Priority - Multipurpose HTML5 Template</title>
+	<title>{{setting('site.title')}}</title>
 	
 	<meta name="description" content="">
 	<meta name="author" content="">
