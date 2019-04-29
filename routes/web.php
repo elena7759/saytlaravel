@@ -34,6 +34,8 @@ Route::get('products', 'ProductController@getindex');
 
 Route::get('product/{id}', 'ProductController@getOne');
 
+Route::get('works', 'WorkController@getAll');
+
 //ajax
 
 Route::post('ajax/modal', 'Ajax\ModalController@postIndex');
