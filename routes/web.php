@@ -10,6 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('user/{id}', 'ChatController@getUser');
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
@@ -35,6 +36,8 @@ Route::get('products', 'ProductController@getindex');
 Route::get('product/{id}', 'ProductController@getOne');
 
 Route::get('works', 'WorkController@getAll');
+
+
 
 //ajax
 
