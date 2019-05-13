@@ -12,37 +12,6 @@
                    {{__('menu.menu')}}
                     <span class="dt-menu-toggle-icon"></span>
                 </div>
-                <ul class="menu">
-                    <li class="menu-item-simple-parent current_page_item"><a href="{{asset('/')}}">{{__('menu.main')}}</a>
-                    </li>
-                    <li class="menu-item-megamenu-parent megamenu-4-columns-group menu-item-depth-0"><a
-                                href="{{asset('photo')}}">{{__('menu.photo')}}</a></li>
-                    <li class="menu-item-simple-parent"><a href="{{asset('video')}}">{{__('menu.video_menu')}}</a>
-                        <ul class="sub-menu">
-                            @foreach($videos as $one)
-                                <li><a href="'{{asset('/catalog/'.$one->id)}}">{{__('menu.video.'.$one->name)}}</a></li>
-                            @endforeach
-                        </ul>
-                        <a class="dt-menu-expand">+</a>
-                    </li>
-                    <li class="menu-item-megamenu-parent megamenu-4-columns-group menu-item-depth-0"><a
-                                href="{{asset('populars')}}">{{__('menu.blog')}}</a></li>
-                    <li class="menu-item-megamenu-parent megamenu-5-columns-group menu-item-depth-0"><a
-                                href="{{asset('products')}}">{{__('menu.photo')}}</a>
-                        <div class="megamenu-child-container">
-                            <ul class="sub-menu">
-                                <li><a href="portfolio-1-column-without-space.html"> I Column</a></li>
-                                <li><a href="portfolio-2-column-without-space.html"> II Column</a></li>
-                                <li><a href="portfolio-3-column-without-space.html"> III Column</a></li>
-                            </ul>
-                        </div>
-                        <a class="dt-menu-expand">+</a>
-                    </li>
-                    <li class="menu-item-simple-parent"><a href="{{asset('shop')}}">{{__('menu.shop')}}</a></li>
-                    <li class="menu-item-simple-parent"><a href="{{asset('contact')}}">{{__('menu.contact')}}</a></li>
-                    <li class="menu-item-simple-parent"><a href="{{asset('/?lang=ru')}}">RU</a></li>
-                    <li class="menu-item-simple-parent"><a href="{{asset('/?lang=en')}}">EN</a></li>
-                </ul>
 				{!!menu('main','menu')!!}
             </nav>
             <!-- **Nav - End**-->

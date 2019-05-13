@@ -32,7 +32,7 @@
                     <!-- **portfolio-container - Starts** -->
                     <div class="portfolio-container">
 					@foreach($arr as $one)
-                        <div class="portfolio dt-sc-one-fourth column with-space all-sort graphic-sort">
+                        <div class="portfolio dt-sc-one-fourth column with-space all-sort {{$one->status}}">
                             <!-- **portfolio-thumb - Starts** -->
                             <div class="portfolio-thumb">
                                 <img src="{{Voyager::image( $one->picture )}}" alt="image"/>
@@ -45,7 +45,7 @@
                             <div class="portfolio-detail">
                                 <div class="views"><span class="fa fa-heart"></span><br/><a href="#">12</a></div>
                                 <div class="portfolio-title">
-                                    <h5><a href="portfolio-detail.html">{{$one->name}}</a></h5>
+                                    <h5><a href="{{asset('work/'.$one->id)}}">{{$one->name}}</a></h5>
                                     <p>Sample text here looks good</p>
                                 </div>
                             </div> <!-- **portfolio-detail - Ends** -->

@@ -10,4 +10,8 @@ class WorkController extends Controller
 		$arr=Work::all();
 		return view('works',compact('arr'));
 	}
+    public function getOne($id=null){
+        $obj=Work::find($id);
+        return view('work',compact('obj'));
+    }
 }

@@ -36,6 +36,7 @@ Route::get('products', 'ProductController@getindex');
 Route::get('product/{id}', 'ProductController@getOne');
 
 Route::get('works', 'WorkController@getAll');
+Route::get('work/{id}', 'WorkController@getOne');
 
 
 
